@@ -1,4 +1,4 @@
-const prettierRules = require("./.prettierrc.js")
+// const prettierRules = require("./.prettierrc.js")
 module.exports = {
   root: true,
   env: {
@@ -11,6 +11,6 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "prettier/prettier": ["error", prettierRules]
+    "prettier/prettier": "error"
   }
-}
+};
